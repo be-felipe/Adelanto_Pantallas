@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cofig">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textfirme"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="110dp"
+            android:text="Modificar Perfil"
+            android:textAlignment="center"
+            android:textSize="100px"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/Idemail"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textfirme"
+            android:layoutDirection="inherit"
+            android:text="@string/Email"
+            android:textSize="50px">
+
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Edit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textfirme"
+            android:layout_toRightOf="@id/Idemail"
+            android:inputType="textEmailAddress"></EditText>
+        <TextView
+            android:id="@+id/IDnombre"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Idemail"
+            android:layoutDirection="inherit"
+            android:text="@string/Nombre"
+            android:textSize="50px">
+
+
+
+        </TextView>
+
+        <EditText
+
+            android:id="@+id/EditNOMBRE"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Edit"
+            android:layout_toRightOf="@id/IDnombre"></EditText>
+
+        <TextView
+            android:id="@+id/IDTelefono"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/IDnombre"
+            android:layoutDirection="inherit"
+            android:text="@string/Telefono"
+
+            android:textSize="50px"></TextView>
+
+        <EditText
+
+            android:id="@+id/Edittelefono"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/EditNOMBRE"
+            android:layout_toRightOf="@id/IDnombre"
+            android:inputType="number"></EditText>
+
+        <TextView
+            android:id="@+id/IdDireccion"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/IDTelefono"
+            android:layoutDirection="inherit"
+            android:text="Direccion:"
+
+            android:textSize="50px"></TextView>
+        <EditText
+
+            android:id="@+id/EditDireccion"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Edittelefono"
+            android:layout_toRightOf="@id/IDnombre"
+            android:inputType="number"></EditText>
+
+        <CheckBox
+            android:id="@+id/checkfemenino"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/EditDireccion"
+            android:text="Femenino">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkMasculino"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/EditDireccion"
+            android:layout_toRightOf="@id/checkfemenino"
+            android:text="Masculino">
+
+        </CheckBox>
+
+        <Button
+            android:id="@+id/BotonConfirmarAjustes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkMasculino"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/estilo"
+            android:backgroundTint="@drawable/estilo"
+
+
+            android:drawableTint="@drawable/estilo"
+            android:text="@string/Confirmar"
+            app:iconTint="@drawable/estilo"
+            app:rippleColor="@drawable/estilo">
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/BotonVolverAjustes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkMasculino"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/estilo"
+            android:backgroundTint="@drawable/estilo"
+
+
+            android:drawableTint="@drawable/estilo"
+            android:text="@string/Volver"
+            app:iconTint="@drawable/estilo"
+            app:rippleColor="@drawable/estilo">
+
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
